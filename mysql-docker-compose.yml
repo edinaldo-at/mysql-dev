@@ -12,11 +12,8 @@ services:
         reservations:
           cpus: '0.25'
           memory: 256M
-    environment:
-      #MYSQL_DATABASE: 'db'
-      #MYSQL_USER: 'user'
-      #MYSQL_PASSWORD: 'password'
-      MYSQL_ROOT_PASSWORD: ${MYSQL_PASS}
+    env_file:
+      - '.env'
     ports:
       - '3306:3306'
     expose:
