@@ -8,7 +8,7 @@
 
 ## 2 - Criar o arquivo .env com as variaveis de ambiente
 ```
-  $ echo MYSQL_PASS=[ sua senha ] >> .env
+  $ echo MYSQL_ROOT_PASSWORD=[ sua senha ] >> .env
   $ echo MYSQL_DATABASE=[ nome do banco] >> .env
 ```
 
